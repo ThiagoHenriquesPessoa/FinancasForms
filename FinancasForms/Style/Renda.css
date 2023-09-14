@@ -1,0 +1,106 @@
+﻿body {
+}
+
+.responsive-panel {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.addRenda {
+    max-width: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+    .addRenda input[type="text"],
+    .addRenda TextBox {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .addRenda DropDownList {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+.button-cancelar {
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+    .button-cancelar:hover {
+        background-color: #ccc;
+    }
+
+.button-salvar {
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin: 0px 10px 10px 10px;
+}
+
+    .button-salvar:hover {
+        background-color: #ccc;
+    }
+
+.button-editar {
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin: 0px 10px 10px 10px;
+}
+
+    .button-editar:hover {
+        background-color: #ccc;
+    }
+
+.button-excluir {
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin: 0px 10px 10px 10px;
+}
+
+    .button-excluir:hover {
+        background-color: #ccc;
+    }
+
+.custom-gridview {
+    border-collapse: collapse;
+    margin-left: 0px;
+}
+
+    .custom-gridview th, .custom-gridview td {
+        padding: 8px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .custom-gridview th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .custom-gridview tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .custom-gridview tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .custom-gridview:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+.selected {
+    background-color: #e0e0e0; 
+}

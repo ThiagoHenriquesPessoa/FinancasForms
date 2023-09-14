@@ -1,0 +1,52 @@
+﻿.section-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sec-home {
+    margin: 0 auto;
+    text-align:start;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 2%; 
+    vertical-align: top; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; 
+    width: 30%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.twenty-percent {
+    width: 20%;
+    float: left;
+}
+
+.eighty-percent {
+    width: 80%;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

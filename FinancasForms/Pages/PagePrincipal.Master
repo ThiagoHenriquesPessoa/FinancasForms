@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PagePrincipal.master.cs" Inherits="FinancasForms.Pages.PagePrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Style/Master.css" />
+    <link rel="stylesheet" type="text/css" href="/Style/Renda.css" />
+    <link rel="stylesheet" type="text/css" href="/Style/Home.css" />
+</head>
+<body>
+    <form id="form1" runat="server" class="container">
+        <header style="height: 186px; text-align: center;">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/finanças.png" alt="Sua Imagem" Style="height: 186px; width: 100%;" />
+        </header>
+        <nav>
+            <asp:Menu ID="MenuPrincipal" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="Medium" ForeColor="Black" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Pages/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Pages/Renda.aspx" Text="Renda" Value="Renda"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Pages/Login.aspx" Text="Sair" Value="Sair"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+            </asp:Menu>
+        </nav>
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Site desenvolvido por
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.google.com/search?q=google+tradutor&amp;oq=&amp;aqs=chrome.0.69i59i450l8.443744j0j7&amp;sourceid=chrome&amp;ie=UTF-8">Henriques</asp:HyperLink>
+            </p>
+        </footer>
+    </form>
+</body>
+</html>
+
